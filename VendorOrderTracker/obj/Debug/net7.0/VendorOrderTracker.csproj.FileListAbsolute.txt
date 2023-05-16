@@ -1,0 +1,8 @@
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.csproj.AssemblyReference.cache
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.AssemblyInfoInputs.cache
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.AssemblyInfo.cs
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.csproj.CoreCompileInputs.cache
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.RazorAssemblyInfo.cache
+C:\Users\justi\Desktop\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net7.0\VendorOrderTracker.RazorAssemblyInfo.cs
