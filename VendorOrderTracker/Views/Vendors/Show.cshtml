@@ -1,0 +1,16 @@
+@model VendorOrderTracker.Models.Vendor
+
+<h1>@Model.Name</h1>
+<p>Description: @Model.Description</p>
+
+<h2>Orders</h2>
+<ul>
+  @foreach (Order order in Model.Orders)
+  {
+    <li>
+      @order.Title - @order.Description - $@order.Price - @order.Date
+    </li>
+  }
+</ul>
+
+<a href="/vendors/@Model.Id/orders/new">Add a new Order</a>

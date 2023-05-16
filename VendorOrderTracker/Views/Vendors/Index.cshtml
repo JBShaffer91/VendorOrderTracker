@@ -1,0 +1,14 @@
+@model List<VendorOrderTracker.Models.Vendor>
+
+<h1>All Vendors</h1>
+
+<ul>
+  @foreach (Vendor vendor in Model)
+  {
+    <li>
+      <a href="/vendors/@vendor.Id">@vendor.Name</a>
+    </li>
+  }
+</ul>
+
+<a href="/vendors/new">Add a new Vendor</a>
