@@ -18655,6 +18655,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Views\\Vendors\\Index.cshtml",
+      "TargetPath": "Views\\Vendors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -18665,8 +18675,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Views\\Vendors\\CreateOrder.cshtml",
+      "TargetPath": "Views\\Vendors\\CreateOrder.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18675,8 +18695,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Views\\Vendors\\Show.cshtml",
+      "TargetPath": "Views\\Vendors\\Show.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\justi\\Desktop\\VendorOrderTracker.Solution\\VendorOrderTracker\\Views\\Vendors\\Create.cshtml",
+      "TargetPath": "Views\\Vendors\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],
