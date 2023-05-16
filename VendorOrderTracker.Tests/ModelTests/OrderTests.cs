@@ -1,11 +1,10 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using VendorOrderTracker.Models;
+using Xunit;
 
 namespace VendorOrderTracker.Tests
 {
-  [TestClass]
   public class OrderTests : IDisposable
   {
     public void Dispose()
@@ -13,44 +12,44 @@ namespace VendorOrderTracker.Tests
       Order.ClearAll();
     }
 
-    [TestMethod]
+    [Fact]
     public void Constructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Test Order", "Test Description", 10, "2023-05-15");
-      Assert.AreEqual(typeof(Order), newOrder.GetType());
+      Order newOrder = new Order("Test Order", "Test Description", 10, new DateTime(2023, 5, 15));
+      Assert.IsType<Order>(newOrder);
     }
 
-    [TestMethod]
+    [Fact]
     public void Constructor_SetsProperties_StringAndInt()
     {
-      Order newOrder = new Order("Test Order", "Test Description", 10, "2023-05-15");
-      Assert.AreEqual("Test Order", newOrder.Title);
-      Assert.AreEqual("Test Description", newOrder.Description);
-      Assert.AreEqual(10, newOrder.Price);
-      Assert.AreEqual("2023-05-15", newOrder.Date);
+      Order newOrder = new Order("Test Order", "Test Description", 10, new DateTime(2023, 5, 15));
+      Assert.Equal("Test Order", newOrder.Title);
+      Assert.Equal("Test Description", newOrder.Description);
+      Assert.Equal(10, newOrder.Price);
+      Assert.Equal(new DateTime(2023, 5, 15), newOrder.Date);
     }
 
-    [TestMethod]
+    [Fact]
     public void GetAll_ReturnsAllOrderInstances_OrderList()
     {
-      Order order1 = new Order("Order 1", "Description 1", 5, "2023-05-12");
-      Order order2 = new Order("Order 2", "Description 2", 15, "2023-05-13");
+      Order order1 = new Order("Order 1", "Description 1", 5, new DateTime(2023, 5, 12));
+      Order order2 = new Order("Order 2", "Description 2", 15, new DateTime(2023, 5, 13));
       List<Order> expectedList = new List<Order> { order1, order2 };
 
       List<Order> resultList = Order.GetAll();
 
-      CollectionAssert.AreEqual(expectedList, resultList);
+      Assert.Equal(expectedList, resultList);
     }
 
-    [TestMethod]
+    [Fact]
     public void Find_ReturnsCorrectOrder_Order()
     {
-      Order order1 = new Order("Order 1", "Description 1", 5, "2023-05-12");
-      Order order2 = new Order("Order 2", "Description 2", 15, "2023-05-13");
+      Order order1 = new Order("Order 1", "Description 1", 5, new DateTime(2023, 5, 12));
+      Order order2 = new Order("Order 2", "Description 2", 15, new DateTime(2023, 5, 13));
 
       Order foundOrder = Order.Find(2);
 
-      Assert.AreEqual(order2, foundOrder);
+      Assert.Equal(order2, foundOrder);
     }
   }
 }
