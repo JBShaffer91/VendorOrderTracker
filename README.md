@@ -65,7 +65,7 @@ The application should now be running at `http://localhost:5000` (or another spe
 
 ## Usage
 
-1. Visit the application in your browser at `http://localhost:5000`.
+1. Visit the application in your browser at `http://localhost:5110`.
 2. Click on the 'Vendors' link to view the list of vendors.
 3. Use the 'Add a new Vendor' link to create a new vendor profile.
 4. Click on a vendor's name to view their associated orders.
