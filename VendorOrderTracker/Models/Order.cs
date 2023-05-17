@@ -28,7 +28,7 @@ namespace VendorOrderTracker.Models
       return _instances;
     }
 
-    public static Order Find(int searchId)
+    public static Order? Find(int searchId)
     {
       return _instances.Find(order => order.Id == searchId);
     }
