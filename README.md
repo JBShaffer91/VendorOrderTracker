@@ -61,7 +61,7 @@ To set up and run this project locally, you'll need to have the following instal
 `dotnet run --project VendorOrderTracker`
 
 
-The application should now be running at `http://localhost:5000` (or another specified port).
+The application should now be running at `http://localhost:5110` (or another specified port).
 
 ## Usage
 
