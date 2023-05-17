@@ -29,14 +29,14 @@ namespace VendorOrderTracker.Controllers
     [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id)
     {
-      Vendor selectedVendor = Vendor.Find(id);
+      Vendor? selectedVendor = Vendor.Find(id);
       return View(selectedVendor);
     }
 
     [HttpGet("/vendors/{id}/orders/new")]
     public ActionResult CreateOrder(int id)
     {
-      Vendor selectedVendor = Vendor.Find(id);
+      Vendor? selectedVendor = Vendor.Find(id);
       return View(selectedVendor);
     }
 
@@ -46,7 +46,7 @@ namespace VendorOrderTracker.Controllers
       DateTime parsedOrderDate = DateTime.Parse(orderDate);
       decimal parsedOrderPrice = decimal.Parse(orderPrice);
       Order newOrder = new Order(orderTitle, orderDescription, parsedOrderPrice, parsedOrderDate);
-      Vendor foundVendor = Vendor.Find(vendorId);
+      Vendor? foundVendor = Vendor.Find(vendorId);
       foundVendor.AddOrder(newOrder);
       return RedirectToAction("Show", new { id = vendorId });
     }
