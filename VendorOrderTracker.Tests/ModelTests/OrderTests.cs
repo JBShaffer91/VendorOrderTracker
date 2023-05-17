@@ -47,7 +47,7 @@ namespace VendorOrderTracker.Tests
       Order order1 = new Order("Order 1", "Description 1", 5, new DateTime(2023, 5, 12));
       Order order2 = new Order("Order 2", "Description 2", 15, new DateTime(2023, 5, 13));
 
-      Order foundOrder = Order.Find(2);
+      Order? foundOrder = Order.Find(2);
 
       Assert.Equal(order2, foundOrder);
     }

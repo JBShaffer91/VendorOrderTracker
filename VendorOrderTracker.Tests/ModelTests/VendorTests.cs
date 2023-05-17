@@ -81,7 +81,7 @@ namespace VendorOrderTracker.Tests
       Vendor newVendor1 = new Vendor(name01, description01);
       Vendor newVendor2 = new Vendor(name02, description02);
       //Act
-      Vendor foundVendor = Vendor.Find(2);
+      Vendor? foundVendor = Vendor.Find(2);
 
       Assert.Equal(newVendor2, foundVendor);
     }

@@ -47,7 +47,7 @@ namespace VendorOrderTracker.Controllers
       decimal parsedOrderPrice = decimal.Parse(orderPrice);
       Order newOrder = new Order(orderTitle, orderDescription, parsedOrderPrice, parsedOrderDate);
       Vendor? foundVendor = Vendor.Find(vendorId);
-      foundVendor.AddOrder(newOrder);
+      foundVendor?.AddOrder(newOrder);
       return RedirectToAction("Show", new { id = vendorId });
     }
   }
