@@ -1,9 +1,32 @@
+@using VendorOrderTracker.Models
+@model List<Vendor>
+
 @{
-  Layout = "_Layout";
+  ViewData["Title"] = "Home";
 }
 
-<div class="jumbotron text-center">
-  <h1>Welcome, Pierre!</h1>
-  <p>Your Vendor and Order Tracker is ready to help you manage your business relationships.</p>
-  <a class="btn btn-primary" href="/vendors">View Vendors</a>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Pierre's Vendor Order Tracker!</h1>
+    <p class="lead">Track all your bakery vendors and their orders easily with this application.</p>
+    <hr class="my-4">
+    <p>Click the button below to manage your vendors.</p>
+    <a class="btn btn-primary btn-lg" href="/vendors" role="button">Manage Vendors</a>
+  </div>
+
+  <h2 class="my-4">Your Vendors</h2>
+
+  @if (Model.Count == 0)
+  {
+    <p>No vendors have been added yet. Click the button above to add a new vendor!</p>
+  }
+  else
+  {
+    <div class="list-group">
+        @foreach (Vendor vendor in Model)
+        {
+          <a href="/vendors/@vendor.Id" class="list-group-item list-group-item-action">@vendor.Name</a>
+        }
+      </div>
+  }
 </div>
